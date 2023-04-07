@@ -1,7 +1,7 @@
 # This Dockerfile builds a CTFd (https://github.com/CTFd/CTFd) image that
 # enables TLS connectivity to Azure Database for MariaDB.
 # More info: https://learn.microsoft.com/en-us/azure/mariadb/concepts-ssl-connection-security
-FROM ctfd/ctfd:3.5.1
+FROM  opesbram/ctfdthemed:latest
 
 USER root
 RUN apt-get update && apt-get install -y wget --no-install-recommends \
